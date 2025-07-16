@@ -33,5 +33,5 @@ nextflow run main.nf -profile standard \
 
 ## Output
 - `results/tumor_fraction_summary.tsv` -> table of tumor fractions
-- bed/ bed_hg38/ wig/ files in results/
-- intermediate files in .nextflow/ and work/
+- `bed/` `bed_hg38/` `wig/` files in `results/`
+- intermediate files in `.nextflow/` and `work/`
