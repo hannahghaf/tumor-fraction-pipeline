@@ -42,8 +42,6 @@ RUN wget http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/liftOver && \
 # install R dependencies & ichorCNA from github
 # clone ichorCNA repo
 RUN git clone https://github.com/broadinstitute/ichorCNA.git /opt/ichorCNA
-# make ichorCNA scripts available globally
-ENV PATH="/opt/ichorCNA/scripts:$PATH"
 # install R dependencies step by step with better error handling
 RUN Rscript -e "install.packages(c('optparse', 'data.table', 'foreach', 'doParallel', 'ggplot2', 'gridExtra', 'remotes'), repos='https://cloud.r-project.org')"
 # install BiocManager
